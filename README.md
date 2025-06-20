@@ -1,55 +1,113 @@
-# first-sql-project    📊
---->     Insight Questions  🧠 
+# 📊 Customer Insights with SQL – Data Analysis Project
 
-🔰 Basic Queries
-List all customers with their age and city.
-Find unique card types available.
-Get customers above a certain age (e.g., 60).
-Sort customers by credit limit in descending order.
-Count how many customers belong to each job segment.
-Show all transactions made by a specific customer.
-Display purchases made on a particular date.
-List all unique cities customers are from.
-Show customers with credit limit more than ₹1,00,000.
-Retrieve all customers with a specific card type (e.g., "Gold").
+Welcome to my SQL project! In this repository, I’ve explored a customer-based transactional dataset using **PostgreSQL** to uncover meaningful insights that can help businesses better understand their users, optimize performance, and personalize offerings.
 
-⚙️ Intermediate Queries
-Calculate total transaction amount per customer.
-Calculate average purchase amount per product type.
-Count number of transactions made each month in 2005.
-Show the top 5 customers by total transaction amount.
-Find customers who have both transactions and purchases.
-Display product types purchased by each customer.
-Identify customers who made transactions in January 2005.
-Find how many different products each customer purchased.
-Get customer’s age, credit limit, and total transaction value.
-Find the most popular product type by number of purchases.
-Trim extra spaces in customer names or product types.
-Convert card_type to uppercase for standardization.
-Replace NULL amounts with 0 in any transaction or purchase.
-Get a list of all unique customer IDs from both transactions and purchases using UNION.
-Find customers who appear in both transaction and purchase tables using INTERSECT.
-Extract month and year from transaction or purchase dates.
-Group and show total transaction amount by year and month.
+This project is not just about running queries — it’s about asking the right questions and turning raw data into clear, actionable answers. 💡
 
-🚀 Advanced Queries
-🔹 Window Functions
-Rank customers by total transaction amount.
-Show cumulative transaction amount per customer (running total).
-Show the difference between each customer's transaction and their average.
+---
 
-🔹 Common Table Expressions (CTEs)
-Use a CTE to find customers with total purchase amount above ₹3,00,000.
-Use a CTE to identify customers with multiple transactions in a single month.
+## 📁 Dataset Overview
 
-🔹 CASE WHEN Logic
-Label customers as 'High', 'Medium', or 'Low' spenders based on their transaction totals.
-Classify age groups (e.g., ‘Senior’, ‘Adult’, ‘Youth’) using CASE WHEN.
+The dataset is divided into three main tables:
 
-📌 UNION / INTERSECT
-Get a list of all unique customer IDs from both transactions and purchases using UNION.
-Find customers who appear in both transaction and purchase tables using INTERSECT.
+- `customer_data` – Includes demographic and financial info like age, city, job segment, and credit limit.
+- `customer_transactions` – Holds transaction history, including amounts and dates.
+- `customer_purchases` – Records each product purchase by the customers.
 
-📌 Date Functions
-Extract month and year from transaction or purchase dates.
-Group and show total transaction amount by year and month.
+---
+
+## 🧠 What I Did
+
+I wrote SQL queries across three levels of difficulty to demonstrate core data analysis skills using PostgreSQL:
+
+---
+
+### 🔰 Basic Queries
+Simple queries to explore and understand the data.
+- List all customers with their age and city.
+- Find unique card types.
+- Get customers above age 60.
+- Sort customers by credit limit.
+- Count customers per job segment.
+- And more...
+
+---
+
+### ⚙️ Intermediate Queries
+Grouped data, applied transformations, and used built-in functions.
+- Calculate total transaction amount per customer.
+- Average purchase amount per product type.
+- Top 5 customers by spending.
+- Count monthly transactions.
+- Find customers active in both transactions and purchases.
+- Clean data using `TRIM()` and `UPPER()`.
+- Handle NULLs and format date fields.
+- And more...
+
+---
+
+### 🚀 Advanced Queries
+Took the analysis up a notch with window functions, CTEs, and logic-based segmentation.
+- Rank customers by transaction amount.
+- Running totals (cumulative spend).
+- Deviation from customer average.
+- Segment customers as 'High', 'Medium', or 'Low' spenders.
+- Group customers into 'Youth', 'Adult', and 'Senior'.
+- Use `UNION` and `INTERSECT` to compare datasets.
+- Analyze transaction trends by month and year.
+
+---
+
+## 🧪 Sample Techniques Used
+
+- `CASE WHEN` for categorization
+- `CTEs` for modular query building
+- `Window Functions` for rankings and cumulative values
+- `EXTRACT()` and `DATE_TRUNC()` for time-based analysis
+- `JOIN`, `UNION`, `INTERSECT` to bring tables together
+- `COALESCE`, `TRIM`, `UPPER` for data cleaning
+
+---
+
+## 📌 Bonus: Performance Tips
+
+For faster query execution, indexing key columns like `customer_id` and `transaction_date` can drastically improve performance — especially on large datasets. Proper indexing allows PostgreSQL to avoid full table scans and fetch only the relevant rows quickly.
+
+---
+
+## 🔧 Tools Used
+
+- 🐘 PostgreSQL (via pgAdmin 4)
+- 🖥️ VS Code (for writing and formatting queries)
+- 📄 Git & GitHub (for version control and project showcase)
+
+---
+
+## 📎 How to Use
+
+1. Clone this repo
+2. Open your PostgreSQL client (e.g., pgAdmin)
+3. Import the data (CSV or SQL dump if available)
+4. Run the queries from the `sql_queries.sql` file step-by-step
+5. Explore and modify to dig deeper!
+
+---
+
+## 🙋‍♂️ About Me
+
+Hi! I’m Mahir Mustakbhai Sama, a data enthusiast and aspiring analyst who enjoys solving problems using clean logic and creative thinking. I'm currently learning, building, and sharing everything I know — one query at a time. 😊
+
+Let’s connect on [LinkedIn](https://www.linkedin.com/in/mahir-sama-7432902a5) or check out my other projects!
+
+---
+
+## ⭐ If You Like It...
+
+Don’t forget to **star ⭐ this repo** to support my work!
+
+---
+
+## 📬 Contact
+
+Feel free to open an issue, fork the repo, or message me if you’d like to collaborate or just say hi!
+
